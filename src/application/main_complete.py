@@ -1024,7 +1024,7 @@ class TikTok:
                         cookie,
                         proxy,
                         item_id=i,
-                        reply=False,
+                        reply=True,
                 ).run():
                     root, params, logger = self.record.run(self.parameter, type_="comment")
                     async with logger(root, name=name, console=self.console, **params) as record:
